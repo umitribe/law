@@ -1,8 +1,8 @@
 {
  "signatures": [
   {
-   "keyid": "3ee0cbbdea49d1698ee17d6eb1f6c160315800026dfc29f810e0a216fa1b7e68",
-   "sig": "e2ae61fe833ae9e071f72872903cded006a6170f30d07e83a4f106d203f05a74ecf4b8f5f238763703fce7614494c0431d997672c03d048b7cd45f5ec39350eb821b3e27426197e343bfc37bd979d8ef2b077e18363bcdefd3abbf82f43fc992b3746ef881d5d6a36b743febf59f6a674f5b81cc044bfab7c41fe2099fb4837058fec84de405e1ac0bfa3cbb707e6557deadb365762b1d9023e158ded89e71f8bccd8f2c9aad6e96353c212991f161289650fe8c094eafdf1037884fe03f3d80a743b87780df500a471e59fd57a08042bd7e5cd4804b0ab0ecc80dc29dd81983a24d884e4764f0475f90744afcd56e4ab5b8a37aed1b5e7724b9714ee0832989"
+   "keyid": "ac309ec75e9e4c353d7541e0816fbbc33acc16b73167b4951873db97a239a111",
+   "sig": "32556b9a2b5c6c3799e9ff087c014f9d9ab198cfdef18e201b919fe444b63d01eb8109c0fc66c8d323c2420029e49301d7ea561110f819ad85ff69660782b30829ab8d0d31d1046c5bc20b3c62d3042f544c018285a86a5243de594576cb7daba2bcfaf5d64862492d4e9310c0d294195b8e10c3e078eba664b7177a38f407849f43978c879884541410890a49cb27f5b86fca87fc424560b705bc8d374f069c1f7fcca0f4d16fca77265fe0f7f91ec7ad96c97c2127f3b47adb888bc4ffb68a318885290cd2c78a28bf818c001b85bfc0ec06e9942fb71ff897cfbddf07907428e0c3d8b9de9fb2797c6738b7df97e1b8e266ba2385832c28f3808d16631ff3"
   }
  ],
  "signed": {
@@ -58,7 +58,9 @@
      ],
      "name": "rdf",
      "paths": [
-      "umitribe/law-rdf"
+      "umitribe/law-rdf",
+      "rdf/branch",
+      "rdf/capstone"
      ],
      "terminating": true,
      "threshold": 1
@@ -89,7 +91,7 @@
     }
    ]
   },
-  "expires": "2024-03-19T15:49:26Z",
+  "expires": "2024-05-22T14:30:47Z",
   "spec_version": "1.0.0",
   "targets": {
    "mirrors.json": {
@@ -107,6 +109,6 @@
     "length": 1507
    }
   },
-  "version": 1
+  "version": 2
  }
 }
