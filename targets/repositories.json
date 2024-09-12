@@ -1,50 +1,61 @@
 {
-    "repositories": {
-        "umitribe/law-docs": {
-            "custom": {
-                "allow-unauthenticated-commits":true,
-                "serve":"latest",
-                "location_regex":"~/.*\\.pdf$"
-            }
-        },
-        "umitribe/law-xml": {
-            "custom": {
-                "type":"xml",
-                "allow-unauthenticated-commits":true,
-                "serve":"latest",
-                "serve-prefix":"_uncodified_xml"
-            }
-        },
-        "umitribe/law-rdf": {
-            "custom": {
-                "type":"rdf",
-                "serve":"historical",
-                "serve-prefix":"_rdf"
-            }
-        },
-        "umitribe/law-html": {
-            "custom": {
-                "preview":"https://github.com/umitribe/law-html-preview.git",
-                "type":"html",
-                "serve":"historical",
-                "location_regex":"/"
-            }
-        },
-        "umitribe/law-xml-codified": {
-            "custom": {
-                "preview":"https://github.com/umitribe/law-xml-codified-preview.git",
-                "type":"xml-codified",
-                "serve":"historical",
-                "serve-prefix":"_xml"
-            }
-        },
-        "umitribe/law-static-assets": {
-            "custom": {
-                "type":"static-assets",
-                "allow-unauthenticated-commits":true,
-                "serve":"latest",
-                "location_regex":"~.+(_document|_reader).+$"
-            }
-        }
+  "repositories": {
+    "umitribe/law-docs": {
+      "custom": {
+        "allow-unauthenticated-commits": true,
+        "serve": "latest",
+        "location_regex": "~/.*\\.pdf$",
+        "routes": [
+          ".*\\.pdf"
+        ]
+      }
+    },
+    "umitribe/law-xml": {
+      "custom": {
+        "type": "xml",
+        "allow-unauthenticated-commits": true,
+        "serve": "latest",
+        "serve-prefix": "_uncodified_xml"
+      }
+    },
+    "umitribe/law-rdf": {
+      "custom": {
+        "type": "rdf",
+        "serve": "historical",
+        "serve-prefix": "_rdf"
+      }
+    },
+    "umitribe/law-html": {
+      "custom": {
+        "preview": "https://github.com/umitribe/law-html-preview.git",
+        "type": "html",
+        "serve": "historical",
+        "location_regex": "/",
+        "routes": [
+          ".*"
+        ]
+      }
+    },
+    "umitribe/law-xml-codified": {
+      "custom": {
+        "preview": "https://github.com/umitribe/law-xml-codified-preview.git",
+        "type": "xml-codified",
+        "serve": "historical",
+        "serve-prefix": "_xml"
+      }
+    },
+    "umitribe/law-static-assets": {
+      "custom": {
+        "type": "static-assets",
+        "allow-unauthenticated-commits": true,
+        "serve": "latest",
+        "location_regex": "~.+(_document|_reader).+$",
+        "is_fallback": true,
+        "routes": [
+          ".*/_document/.*",
+          "_reader/.*"
+        ]
+      }
     }
+  }
 }
